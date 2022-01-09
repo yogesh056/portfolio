@@ -21,7 +21,7 @@ export default function Header({ playing }: HeaderProps) {
           playing={playing}
           togglePlay={(type: string) => dispatch({ type })}
         />
-        <span className="logo-name">YogiDEV</span>
+        <span className="logo-name">Yogi[DEV]</span>
       </div>
       <div
         style={{
