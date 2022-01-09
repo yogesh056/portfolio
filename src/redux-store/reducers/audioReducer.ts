@@ -1,6 +1,6 @@
 import { audioInterface } from "../../modals";
 
-const initialState = { playing: false, audioUrl: "" } as audioInterface;
+const initialState = { playing: true, audioUrl: "" } as audioInterface;
 export default function audioReducer(
   state = initialState as audioInterface,
   action: any

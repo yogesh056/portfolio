@@ -28,7 +28,7 @@ const Player = ({ playing, togglePlay }: propss) => {
   }, [audio,togglePlay]);
 
   return (
-    <div onClick={toggle}>
+    <div onClick={toggle} className="player-icon">
       {playing ? (
         <img className="player-icon" src={pause}  alt="pause"/>
       ) : (
