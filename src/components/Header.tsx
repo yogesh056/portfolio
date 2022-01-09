@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import Player from "../components/Player";
 const download = require("../assets/download.png");
 interface HeaderProps {
@@ -7,7 +7,6 @@ interface HeaderProps {
 }
 export default function Header({ playing }: HeaderProps) {
   const dispatch = useDispatch();
-  console.log("Dis",dispatch)
 
   return (
     <div className="header">
@@ -33,7 +32,7 @@ export default function Header({ playing }: HeaderProps) {
         }}
       > <a className="link" href={require("../assets/resume.pdf")} download="Yogeshwaran's_Resume">
         <span className="logo-name">Resume</span>
-        <img className="social-icons download-icon" src={download}></img>
+        <img className="social-icons download-icon" src={download}  alt="download"></img>
       </a>
       </div>
     </div>

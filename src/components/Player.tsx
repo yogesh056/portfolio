@@ -30,9 +30,9 @@ const Player = ({ playing, togglePlay }: propss) => {
   return (
     <div onClick={toggle}>
       {playing ? (
-        <img className="player-icon" src={pause} />
+        <img className="player-icon" src={pause}  alt="pause"/>
       ) : (
-        <img className="player-icon" src={play} />
+        <img className="player-icon" src={play}  alt="play"/>
       )}
     </div>
   );

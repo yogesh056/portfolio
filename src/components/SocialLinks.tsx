@@ -6,21 +6,37 @@ const github = require("../assets/github.png");
 export default function SocialLinks() {
   return (
     <div className="social-links ">
-      <a href="https://github.com/yogesh056/" className="align-center" target="_blank">
-        <img className={"social-icons"} src={github} />
+      <a
+        href="https://github.com/yogesh056/"
+        className="align-center"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className={"social-icons"} src={github} alt="github" />
       </a>
-      <a href="https://www.linkedin.com/in/yogeshwaran-ramesh-43978016b/" className="align-center" target="_blank">
-        <img className={"social-icons"} src={linkedin} />
+      <a
+        href="https://www.linkedin.com/in/yogeshwaran-ramesh-43978016b/"
+        className="align-center"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className={"social-icons"} src={linkedin} alt="linkedin" />
       </a>
-      <a href="https://www.instagram.com/yoge.exe/" className="align-center" target="_blank">
-        <img className={"social-icons"} src={instagram} />
+      <a
+        href="https://www.instagram.com/yoge.exe/"
+        className="align-center"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className={"social-icons"} src={instagram} alt="instagram" />
       </a>
       <a
         href="https://www.facebook.com/yogesh056/"
         target="_blank"
         className="align-center"
+        rel="noreferrer"
       >
-        <img className={"social-icons"} src={facebook} />
+        <img className={"social-icons"} src={facebook} alt="facebook" />
       </a>
     </div>
   );

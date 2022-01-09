@@ -5,7 +5,7 @@ export default function Bio() {
   return (
     <div className="centered-content">
       <div className="memoji-wrapper">
-        <img className={"memoji"} src={memoji} />
+        <img className={"memoji"} src={memoji}  alt="memoji"/>
       </div>
       <div>
         <span className="content-text">Yogeshwaran Ramesh</span>

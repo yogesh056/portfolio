@@ -18,6 +18,7 @@ export default function ModeSwitch() {
       <img
         className="social-icons download-icon"
         src={isDarkMode ? sun : moon}
+        alt="mode"
       ></img>
     </div>
   );

@@ -12,6 +12,7 @@ export default function Sharingan({ playing }: SharinganProps) {
             <img
               className={playing ? "sharingan sharingan-animation" : "sharingan"}
               src={sharingan}
+              alt="eye"
             />
           </div>
         </div>
@@ -20,6 +21,7 @@ export default function Sharingan({ playing }: SharinganProps) {
             <img
               className={playing ? "sharingan sharingan-animation" : "sharingan"}
               src={sharingan}
+              alt="eye"
             />
           </div>
         </div>

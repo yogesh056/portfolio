@@ -1,7 +1,7 @@
 import React from "react";
 
 import { createStore } from "redux";
-import { Provider, useSelector } from "react-redux";
+import { Provider } from "react-redux";
 import Landing from "./screens/Landing";
 import rootReducer from "./redux-store/reducers";
 const store = createStore(rootReducer);
