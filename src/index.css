@@ -180,6 +180,7 @@ body {
   position: relative;
   overflow: hidden;
   transition: transform 0.5s;
+  background-color: #F4F9F9;
 }
 
 .social-links a::after {
@@ -190,7 +191,7 @@ body {
   left: 0;
   background: #000;
   z-index: -1;
-  background: linear-gradient(-45deg, #AAAAAA,#1687A7 );
+  background: linear-gradient(-45deg, #AAAAAA,#FDE49C );
   position: absolute;
   transition: 0.5s;
 }
@@ -227,6 +228,7 @@ body {
   right: 10px;
   overflow: hidden;
   transition: transform 0.5s;
+  background-color: #F4F9F9;
 }
 .wave {
   font-size: 28px;
@@ -409,10 +411,10 @@ body {
 
 @keyframes MoveUpDown {
   0%, 100% {
-    bottom: -5px;
+    bottom: -2px;
   }
   50% {
-    bottom: 0px;
+    bottom: 2px;
   }
 }
 @media screen and (max-width: 550px) {
