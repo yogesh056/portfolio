@@ -18,14 +18,14 @@ const Player = ({ playing, togglePlay }: propss) => {
   useEffect(() => {
     console.log("Play",playing,audio);
     playing ? audio.play() : audio.pause();
-  }, [playing]);
+  }, [playing,audio]);
 
   useEffect(() => {
     audio.addEventListener("ended", () => togglePlay("stop"));
     return () => {
       audio.removeEventListener("ended", () => togglePlay("stop"));
     };
-  }, []);
+  }, [audio,togglePlay]);
 
   return (
     <div onClick={toggle}>
