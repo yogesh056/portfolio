@@ -1,13 +1,445 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.dark-mode{
+  background-image: linear-gradient(-60deg, #000957 50%, #161E54 50%) !important;
+}
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #A4EBF3 50%, #CCF2F4 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 5%;
+}
+.player-icon-container {
+  display: flex;
+  height: 100%;
+}
+.player-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.logo-name {
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+/*content*/
+.content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.memoji{
+  width: 200px;
+  height:200px;
+}
+.centered-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*sharingan*/
+.sharingan-bg {
+  background-color: brown !important;
+}
+.sharingan-wrapper {
+  height: 100%;
+}
+#sharingan-container {
+  justify-content: space-between !important;
+}
+.sharingan-border {
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: brown !important;
+  height: 200px;
+  width: 200px;
+}
+.sharingan {
+  width: 150px;
+  height: 150px;
+}
+#eye-right {
+  background-color: whitesmoke;
+  height: 250px;
+  width: 400px;
+  margin: 0 30px;
+  border-radius: 65% 0;
+  border-top: solid black 15px;
+  border-left: solid black 5px;
+  border-right: solid black 7px;
+  border-bottom: solid black 2px;
+  border-bottom-left-radius: 5%;
+  border-top-right-radius: 1%;
+}
+#eye-left {
+  background-color: whitesmoke;
+  height: 250px;
+  width: 400px;
+  margin: 0 30px;
+  border-radius: 0 65%;
+  border-top: solid black 15px;
+  border-right: solid black 5px;
+  border-left: solid black 7px;
+  border-bottom: solid black 2px;
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 1%;
+}
+.sharingan-animation {
+  -webkit-animation: spin 0.6s linear infinite;
+  -moz-animation: spin 0.6s linear infinite;
+  animation: spin 0.6s linear infinite;
+  animation-direction: reverse;
+}
+
+/*content*/
+
+.animated-text {
+  color:black;
+  font-size: 22px;
+  margin: 0 10px;
+  font-weight: normal !important;
+}
+.content-text {
+  color:black;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.animated-fixed-text {
+  color:black;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 0 5px;
+
+}
+.animated-text:after {
+  content:"Full Stack";
+  animation: change 5s linear infinite;
+}
+
+
+.social-links {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+}
+
+.social-links a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 10px 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.social-links a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: #000;
+  z-index: -1;
+  background: linear-gradient(-45deg, #AAAAAA,#1687A7 );
+  position: absolute;
+  transition: 0.5s;
+}
+
+.social-links a:hover::after {
+  top: 0;
+}
+
+.social-links a:hover .fab {
+  color: #fff;
+}
+
+.social-links a:hover {
+  transform: translateY(-10px);
+}
+.social-icons{
+  width: 30px;
+  height: 30px;
+}
+.input{
+  width: 10rem;
+}
+.wave-container{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 10px 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+.wave {
+  font-size: 28px;
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.download-icon {
+  animation: MoveUpDown 1s linear infinite;
+  position: relative;
+  cursor: pointer;
+}
+.link{
+  text-decoration: none;
+  color: #000;
+}
+
+
+.modal {
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  transition:all .5s ease-in-out;
+  opacity:0;
+  z-index:-1;
+}
+.modal-open {
+  opacity:1;
+  transition:all .5s ease-in-out;
+  z-index:+1;
+}
+.modal-content {
+  position:fixed;
+  top:50%;
+  left:50%;
+  width:500px;
+  background:#fff;
+  border-radius:4px;
+  transform:translate(-50%, -200%);
+  transition:all .5s ease-in-out;
+  perspective: 1000;
+  outline:1px solid transparent;
+  opacity:0;
+}
+.modal-content-open {
+  transform:translate(-50%, -50%);
+  transition:all .5s ease-in-out;
+  transition-delay:.5s;
+  z-index:9999;
+  opacity:1;
+}
+.modal-close {
+  float:right;
+  text-decoration:none;
+  padding:22px 22px;
+  color:#424242;
+  font-weight:800;
+  transition:all .5s ease-in-out;
+  z-index:+1;
+  background:rgba(0,0,0,0.1);
+  text-align:center;
+  border-radius:0 4px 0 0;
+}
+.modal-close:hover {
+  color:#fff;
+  background:rgba(0,0,0,0.5);
+}
+.modal-content h3 {
+  padding:20px;
+  margin: 0;
+  display:block;
+  text-align:center;
+  border-bottom:1px solid #e0e0e0;
+  text-transform:uppercase;
+  background:rgba(2,162,239,1);
+  color:#fff;
+  border-radius:4px 4px 0 0;
+}
+.modal-area {
+  padding:20px;
+}
+
+.modal-area input[type="radio"] {
+  display:none;
+}
+.modal-area label {
+  float:left;
+  display:block;
+  padding:10px 20px;
+  font-weight:700;
+  cursor:pointer;
+  z-index:+2;
+  background:rgba(0,0,0,.3);
+  color:#fff;
+  transition:all .5s ease-in-out;
+}
+
+/*animations*/
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes animateBackground {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+@keyframes change {
+  0% {
+    content: "React";
+  }
+  10% {
+    content: "React Native";
+  }
+  20% {
+    content: "Node";
+  }
+  30% {
+    content: "Redux";
+  }
+  40% {
+    content: "Vue";
+  }
+  50% {
+    content: "MERN";
+  }
+  60% {
+    content: "Next";
+  }
+  70% {
+    content: "Nuxt";
+  }
+  80% {
+    content: "Jest";
+  }
+  90% {
+    content: "AWS";
+  }
+}
+
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: -2px;
+  }
+  50% {
+    bottom: 2px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social-links a {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+  }
+  .social-icons{
+    width: 20px;
+    height: 20px;
+  }
+  #eye-right, #eye-left {
+    height: 80px;
+    width: 150px;
+    margin: 10px;
+
+  }
+  .sharingan {
+    width: 70px;
+    height: 70px;
+  }
+  .sharingan-border {
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: brown !important;
+    height: 60px;
+    width: 60px;
+  }
 }
