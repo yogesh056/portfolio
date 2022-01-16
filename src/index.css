@@ -350,6 +350,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 @keyframes animateBackground {
   to {
     filter: hue-rotate(360deg);
@@ -357,6 +358,22 @@ body {
 }
 
 @keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+
+@-webkit-keyframes animateBackground {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slide {
   0% {
     transform: translateX(-25%);
   }
@@ -397,6 +414,38 @@ body {
   }
 }
 
+@-webkit-keyframes change {
+  0% {
+    content: "React";
+  }
+  10% {
+    content: "React Native";
+  }
+  20% {
+    content: "Node";
+  }
+  30% {
+    content: "Redux";
+  }
+  40% {
+    content: "Vue";
+  }
+  50% {
+    content: "MERN";
+  }
+  60% {
+    content: "Next";
+  }
+  70% {
+    content: "Nuxt";
+  }
+  80% {
+    content: "Jest";
+  }
+  90% {
+    content: "AWS";
+  }
+}
 
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
