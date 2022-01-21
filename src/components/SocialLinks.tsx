@@ -3,6 +3,8 @@ const instagram = require("../assets/instagram.png");
 const facebook = require("../assets/facebook.png");
 const linkedin = require("../assets/linkedin.png");
 const github = require("../assets/github.png");
+const medium = require("../assets/medium.png");
+
 export default function SocialLinks() {
   return (
     <div className="social-links ">
@@ -13,6 +15,14 @@ export default function SocialLinks() {
         rel="noreferrer"
       >
         <img className={"social-icons"} src={github} alt="github" />
+      </a>
+      <a
+        href="https://github.com/yogesh056/"
+        className="align-center"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className={"social-icons"} src={medium} alt="medium" />
       </a>
       <a
         href="https://www.linkedin.com/in/yogeshwaran-ramesh-43978016b/"
