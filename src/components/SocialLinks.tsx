@@ -17,7 +17,7 @@ export default function SocialLinks() {
         <img className={"social-icons"} src={github} alt="github" />
       </a>
       <a
-        href="https://github.com/yogesh056/"
+        href="https://medium.com/@yogeshwaranramesh"
         className="align-center"
         target="_blank"
         rel="noreferrer"
