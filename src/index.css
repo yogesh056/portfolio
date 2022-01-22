@@ -500,6 +500,11 @@ body {
     width: 20px;
     height: 20px;
   }
+  .wave-container{
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media screen and (min-width: 551px) and (max-width: 750px) {

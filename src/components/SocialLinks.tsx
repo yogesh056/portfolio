@@ -33,7 +33,7 @@ export default function SocialLinks() {
         <img className={"social-icons"} src={linkedin} alt="linkedin" />
       </a>
       <a
-        href="https://www.instagram.com/yoge.exe/"
+        href="https://www.instagram.com/yogeshwaran.ramesh/"
         className="align-center"
         target="_blank"
         rel="noreferrer"
